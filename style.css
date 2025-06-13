@@ -1,0 +1,70 @@
+body {
+  background: #0f1115;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background: #1c1f26;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  width: 320px;
+}
+
+input {
+  padding: 5px;
+  font-size: 16px;
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.circle-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+}
+
+.progress-ring__circle {
+  transition: 0.35s stroke-dashoffset;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.timer-display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+}
+
+.controls button, .series button {
+  margin: 10px 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.controls button {
+  background-color: #4c4f5a;
+  color: #fff;
+}
+
+#toggle {
+  background-color: #b49df2;
+}
+
+#reset-series {
+  background-color: #444;
+  color: #fff;
+}

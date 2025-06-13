@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cronômetro de Descanso</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Cronômetro de Descanso</h2>
+
+    <label for="input-time">Tempo de descanso (s):</label>
+    <input type="number" id="input-time" value="90" min="1">
+
+    <div class="circle-container">
+      <svg class="progress-ring" width="200" height="200">
+        <circle class="progress-ring__circle" stroke="blue" stroke-width="8" fill="transparent" r="90" cx="100" cy="100"/>
+      </svg>
+      <div class="timer-display" id="timer">01:30</div>
+    </div>
+
+    <div class="controls">
+      <button id="add-time">+1:00</button>
+      <button id="toggle">▶️</button>
+      <button id="reset">🔁</button>
+    </div>
+
+    <div class="series">
+      <p>Séries: <span id="series-count">0</span></p>
+      <button id="reset-series">Reiniciar Séries</button>
+    </div>
+  </div>
+
+  <script src="script.js">
+   
+  </script>
+</body>
+</html>
+
+
